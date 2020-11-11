@@ -1,0 +1,11 @@
+
+
+justify-content: space-between;
+
+/* elements spread out equally among the available space. */
+
+flex: 1 1 auto;
+
+/* flex property is a shorthand property for flex children
+three values stand for flex-grow, flex-shrink, and flex-basis
+These values indicate to grow to the available space and be able to shrink/get smaller if need be, and auto is the default value which tells the browser to look at the element’s width or height property rather than specifying a particular width value like a percentage.  */

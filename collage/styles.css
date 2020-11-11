@@ -22,3 +22,12 @@
 .site-nav-list {
   justify-content: space-between;
 }
+
+.site-header {
+  height: 100%;
+  padding: 1.25rem 0;
+  position: fixed;
+  right: 1.25rem;
+  top: 0;
+  writing-mode: vertical-rl;
+}
