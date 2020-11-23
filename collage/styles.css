@@ -16,22 +16,21 @@
 }
 
 .site-header > * {
-  flex: 1 1 auto;
+	flex: 1 1 auto;
 }
 
-
 .site-nav-list {
-  justify-content: space-between;
-  list-style-type: none;
+	justify-content: space-between;
+	list-style-type: none;
 }
 
 .site-header {
-  height: 100%;
-  padding: 1.25rem 0;
-  position: fixed;
-  right: 1.25rem;
-  top: 0;
-  writing-mode: vertical-rl;
+	height: 100%;
+	padding: 1.25rem 0;
+	position: fixed;
+	right: 1.25rem;
+	top: 0;
+	writing-mode: vertical-rl;
 }
 
 .main {
@@ -44,5 +43,41 @@
 }
 
 .container {
+	position: relative;
+}
+
+.heading {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 40rem) {
+	.heading {
+		font-size: 2rem;
+		left: 0;
+		position: absolute;
+		top: 6rem;
+		z-index: 10;
+	}
+}
+
+.main-highlight {
+	color: #FFF;
+	background-color: #000;
+	line-height: 1.35;
+	padding: .375rem;
+}
+
+.grid-container {
+	margin: 0 auto;
+	padding: 0 10%;
+	max-width: 65rem; /* restricts grids size */
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(12, 1fr);
 	position: relative;
 }
