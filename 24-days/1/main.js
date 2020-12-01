@@ -1,5 +1,6 @@
 function candies(children, candy) {
-    if(Math.floor)
+    candy = Math.floor(candy);
+    return candy - (candy % children)
 }
 
 
