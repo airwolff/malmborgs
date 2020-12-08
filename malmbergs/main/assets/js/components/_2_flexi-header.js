@@ -49,7 +49,7 @@
 
       return firstFocusable;
     };
-    
+  
     function isVisible(element) {
       return (element.offsetWidth || element.offsetHeight || element.getClientRects().length);
     };
@@ -62,8 +62,8 @@
     
     function toggleMenuNavigation(bool) { // toggle menu visibility on small devices
       Util.toggleClass(document.getElementsByClassName('f-header__nav')[0], 'f-header__nav--is-visible', bool);
-      // Util.toggleClass(document.getElementsByClassName('main-logo')[0], 'f-header__nav', bool);
-      // Util.toggleClass(document.getElementsByClassName('f-header__list')[0], 'add-padding', bool);
+      Util.toggleClass(document.getElementsByClassName('main-logo')[0], 'f-header__nav', bool);
+      Util.toggleClass(document.getElementsByClassName('f-header__list')[0], 'margin-y-xl', bool);
       Util.toggleClass(flexHeader[0], 'f-header--expanded', bool);
       menuTrigger.setAttribute('aria-expanded', bool);
       if(bool) firstFocusableElement.focus(); // move focus to first focusable element
